@@ -1,0 +1,60 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout principal, com duas colunas */
+.container {
+  display: flex;
+  height: 100vh; /* Ocupar a tela inteira */
+  width: 100vw;
+}
+
+/* Coluna do mapa */
+.map {
+  flex: 2;
+  height: 100%; /* O mapa ocupa toda a altura da coluna */
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Coluna de informações */
+.info {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4; /* Cor de fundo sutil */
+  border-left: 2px solid #ddd; /* Delimitando a separação com o mapa */
+  overflow-y: auto; /* Caso o conteúdo exceda, scrollbar será exibido */
+}
+
+/* Título das seções */
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Parágrafos de informação */
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Borda e espaçamento */
+.info div {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
